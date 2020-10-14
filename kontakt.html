@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pl">
+   <head>
+      <meta charset="utf-8">
+      <title>Kontakt | Sztuka Japonii</title>
+      <meta content="width=device-width,initial-scale=1" name="viewport">
+      <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap&subset=latin-ext" rel="stylesheet">
+      <link href="css/style.css" rel="stylesheet">
+      <link href="css/normalize.css" rel="stylesheet">
+   </head>
+   <body class="contact-page">
+      <header class="page-header">
+         <h1 class="page-title"><span class="deco-title">Sztuka Japonii</span></h1>
+         <nav class="page-menu">
+            <ul class="menu">
+               <li class="menu-item"><a class="menu-link" href="index.html">Start</a></li>
+               <li class="menu-item"><a class="menu-link" href="kolekcja.html">Kolekcja</a></li>
+               <li class="menu-item"><a class="menu-link" href="autorzy.html">Autorzy</a></li>
+               <li class="menu-item"><a class="menu-link" href="wsparcie.html">Wsparcie</a></li>
+               <li class="menu-item"><a class="menu-link" href="kontakt.html">Kontakt</a></li>
+            </ul>
+         </nav>
+      </header>
+      <main>
+         <div class="wrapper">
+            <section>
+               <h2 class="section-title">Kontakt</h2>
+               <div class="section-desc">
+                  <form class="form" method="POST">
+                     <div><label class="label-title" for="imie">Imię:</label> <input name="imie" type="text" id="imie" class="form-input" placeholder="Wpisz swoje imię..." required autofocus></div>
+                     <div><label class="label-title" for="email">Mail:</label> <input name="email" type="text" id="email" class="form-input" placeholder="Wpisz swój email..." required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"></div>
+                     <div><label class="label-title" for="wiadomosc">Wiadomość:</label> <textarea class="form-message" id="wiadomosc" name="wiadomosc" placeholder="Wpisz swoją wiadomość..." required></textarea></div>
+                     <div>
+                        <p class="label-title">Czy znasz się na którejś z dziedzin?</p>
+                        <p>
+                           <select name="fav">
+                              <option value="archiktektura">Archiktektura</option>
+                              <option value="anime">Anime</option>
+                              <option value="origami">Origami</option>
+                              <option value="obrazy">Obrazy</option>
+                              <option value="brak">Nie znam</option>
+                           </select>
+                        </p>
+                     </div>
+                     <div>
+                        <p class="label-title">W jakim celu piszesz?</p>
+                        <p><label class="label-radio"><input name="message-type" type="radio" required value="wspolpraca">Współpraca</label> <label class="label-radio"><input name="message-type" type="radio" value="pytanie">Pytanie</label> <label class="label-radio"><input name="message-type" type="radio" value="offtopic">Wiadomość ogólna</label></p>
+                     </div>
+                     <div class="checkbox-part">
+                        <p class="label-title">Jakie formaty wzbogacą stronę?</p>
+                        <div><input name="kuchnia" type="checkbox" id="kuchnia"> <label for="kuchnia">Kuchnia</label></div>
+                        <div><input name="wideo" type="checkbox" id="wideo"> <label for="wideo">Wideo</label></div>
+                        <div><input name="news" type="checkbox" id="news"> <label for="news">Aktualności</label></div>
+                     </div>
+                     <div><button class="form-button" type="button">Wyślij</button></div>
+                  </form>
+               </div>
+            </section>
+         </div>
+         <ul class="recommend-list">
+           <li class="recommend-item"><a href="http://wszystkiegojaponskiego.pl/" class="recommend-link">Wszystkiego japońskiego</a></li>
+           <li class="recommend-item"><a href="https://japonia-online.pl/" class="recommend-link">Japonia Online</a></li>
+           <li class="recommend-item"><a href="https://www.youtube.com/channel/UCzuvRWjh7k1SZm1RvqvIx4w" class="recommend-link"><img src="img/kgonciarz.png" alt="Kanał Krzysztofa Gonciarza"></a></li>
+         </ul>
+      </main>
+      <footer class="footer">Radosław Gryczan | 2020</footer>
+      <script src="js/script.js"></script><!-- endbuild  -->
+   </body>
+</html>
